@@ -1,0 +1,15 @@
+{
+  "name": "moment1",
+  "version": "1.0.0",
+  "source": "src/pages/index.html",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "author": "Isaac Svedin",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "parcel": "^2.13.3"
+  }
+}
