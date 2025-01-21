@@ -4,12 +4,14 @@
   "source": "src/pages/index.html",
   "scripts": {
     "start": "parcel",
-    "build": "parcel build"
+    "build": "parcel build",
+    "deploy": "npm run build && gh-pages -d dist"
   },
   "author": "Isaac Svedin",
   "license": "ISC",
   "description": "",
   "devDependencies": {
+    "gh-pages": "^6.3.0",
     "parcel": "^2.13.3",
     "sharp": "^0.33.5"
   }
