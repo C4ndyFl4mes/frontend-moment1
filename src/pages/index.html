@@ -3,13 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/index.css">
+    <link rel="stylesheet" href="../styles/global.css">
+    <link rel="stylesheet" href="../styles/menu.css">
+    <script src="../scripts/menu.js" type="module"></script>
     <script src="../scripts/index.js" type="module"></script>
     <title>Moment 1</title>
 </head>
 <body>
-    <h1>Abcd</h1>
-    <p>Hello</p>
-    <p>TEST test Test</p>
+    <header>
+        <p>Moment 1</p>
+        <nav id="menu">
+            <ul>
+                <li class="here">
+                    <a href="index.html">Hem</a>
+                </li>
+                <li>
+                    <a href="photos.html">Fotografier</a>
+                </li>
+                <li>
+                    <a href="workprocess.html">Arbetsprocess</a>
+                </li>
+            </ul>
+        </nav>
+        <div id="menu-top-div">
+            <button class="nav-btn" id="open-menu-btn"><span>Meny</span></button>
+            <button class="nav-btn" id="close-menu-btn"><span>Stäng</span></button>
+        </div>
+    </header>
+    <main>
+        <h1>Hem</h1>
+        <article>
+            <h2>Om uppgiften</h2>
+            <p>aaaaaaaaaaa</p>
+        </article>
+    </main>
+    <footer></footer>
 </body>
 </html>

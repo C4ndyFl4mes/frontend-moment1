@@ -1,0 +1,169 @@
+/* This CSS-file contains only the CSS-rules for the navigation menu. */
+
+/* Mobile first */
+#menu {
+    position: absolute;
+    right: 0px;
+    top: 4rem;
+
+    width: 50%;
+    min-width: fit-content;
+    height: fit-content;
+
+    background-color: #777;
+
+    display: none;
+    flex-direction: column;
+}
+
+/* The container for open/close menu buttons. */
+#menu-top-div {
+    width: 50%;
+    height: 3rem;
+    padding: 0.5rem;
+    padding-right: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* The navigation buttons shared styling. */
+.nav-btn {
+    height: 2rem;
+
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+
+    background-color: #ccc;
+    border: 2px solid black;
+
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+/* On hover: */
+.nav-btn:hover {
+    background-color: #39ecdd;
+}
+
+/* On mousedown: */
+.nav-btn:active {
+    filter: brightness(90%);
+}
+
+/* The button to open the navigation menu. Starting display is block. It can be toggled to none by toggleMenu function in menu.js. */
+#open-menu-btn {
+    display: block;
+}
+
+/* The button to close the navigation menu. Starting display is none. It can be toggled to block by toggleMenu function in menu.js. */
+#close-menu-btn {
+    display: none;
+}
+
+/* The list container for the navigation menu. */
+#menu>ul {
+    height: fit-content;
+    min-width: fit-content;
+
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+/* The list item. */
+#menu>ul>li {
+    width: 100%;
+    height: 2rem;
+
+    background-color: #555;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 0.3s;
+
+    user-select: none;
+}
+
+/* The navigation link */
+#menu>ul>li>a {
+    padding: 0;
+    padding-left: 1rem;
+
+    text-decoration: none;
+    color: white;
+
+    font-weight: 700;
+    font-size: 1.2rem;
+
+    transition: 0.3s;
+}
+
+/* Two hover effects for cursors. */
+#menu>ul>li:hover {
+    background-color: #39ecdd;
+}
+
+#menu>ul>li:hover>a {
+    color: black;
+}
+
+/* Changes the styling on the list-item in the navigation menu to indicate which subpage the user is on. */
+.here {
+    z-index: 10;
+    border-left: 5px solid rgb(0, 255, 64);
+    box-shadow: -1px 0px 5px black, 1px 0px 5px black;
+}
+
+/* Screens from 600px has no button for showing the menu. */
+@media screen and (min-width: 600px) {
+    #menu {
+        position: static;
+
+        height: 4rem;
+        width: auto;
+
+        /* Makes sure the menu will be displayed. */
+        display: block !important;
+    }
+
+    /* Makes sure that the buttons are not displayed. */
+    #menu-top-div {
+        display: none !important;
+    }
+
+    /* Changes the list direction to row. */
+    #menu>ul {
+        height: inherit;
+        padding: 0;
+
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Cover the entire vertical length. */
+    #menu>ul>li {
+        height: inherit;
+    }
+
+    /* Alings the link text in the center. */
+    #menu>ul>li>a {
+        padding: 1rem;
+        text-align: center;
+    }
+
+    /* Slightly different indication of which subpage the user is on. */
+    .here {
+        z-index: 10;
+        border: 0;
+        border-top: 5px solid rgb(0, 255, 64);
+        box-shadow: -1px 0px 10px black, 1px 0px 10px black;
+    }
+}
