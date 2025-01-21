@@ -1,0 +1,129 @@
+#menu {
+  background-color: #777;
+  flex-direction: column;
+  width: 50%;
+  min-width: fit-content;
+  height: fit-content;
+  display: none;
+  position: absolute;
+  top: 4rem;
+  right: 0;
+}
+
+#menu-top-div {
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  height: 3rem;
+  padding: .5rem 0 .5rem .5rem;
+  display: flex;
+}
+
+.nav-btn {
+  cursor: pointer;
+  background-color: #ccc;
+  border: 2px solid #000;
+  height: 2rem;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  transition: all .2s;
+}
+
+.nav-btn:hover {
+  background-color: #39ecdd;
+}
+
+.nav-btn:active {
+  filter: brightness(90%);
+}
+
+#open-menu-btn {
+  display: block;
+}
+
+#close-menu-btn {
+  display: none;
+}
+
+#menu > ul {
+  flex-direction: column;
+  align-items: start;
+  min-width: fit-content;
+  height: fit-content;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+#menu > ul > li {
+  user-select: none;
+  background-color: #555;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 2rem;
+  transition: all .3s;
+  display: flex;
+}
+
+#menu > ul > li > a {
+  color: #fff;
+  padding: 0 0 0 1rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all .3s;
+}
+
+#menu > ul > li:hover {
+  background-color: #39ecdd;
+}
+
+#menu > ul > li:hover > a {
+  color: #000;
+}
+
+.here {
+  z-index: 10;
+  border-left: 5px solid #00ff40;
+  box-shadow: -1px 0 5px #000, 1px 0 5px #000;
+}
+
+@media screen and (width >= 600px) {
+  #menu {
+    width: auto;
+    height: 4rem;
+    position: static;
+    display: block !important;
+  }
+
+  #menu-top-div {
+    display: none !important;
+  }
+
+  #menu > ul {
+    height: inherit;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+
+  #menu > ul > li {
+    height: inherit;
+  }
+
+  #menu > ul > li > a {
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .here {
+    z-index: 10;
+    border: 0;
+    border-top: 5px solid #00ff40;
+    box-shadow: -1px 0 10px #000, 1px 0 10px #000;
+  }
+}
+/*# sourceMappingURL=index.e0a973c1.css.map */
