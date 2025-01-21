@@ -1,0 +1,28 @@
+@import "https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap";
+body {
+  background-color: #70ffff;
+  margin: 0;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+}
+
+header {
+  background-color: #555;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 4rem;
+  display: flex;
+}
+
+header > p {
+  color: #39ecdd;
+  align-self: center;
+  margin: 0 0 0 .5rem;
+  font-size: 2rem;
+}
+
+footer {
+  flex-flow: wrap;
+  display: flex;
+}
+/*# sourceMappingURL=index.40f091a3.css.map */
