@@ -1,0 +1,18 @@
+/* This CSS-file contains the CSS-rules for the index page. */
+
+/* The page content. */
+main {
+    width: 90%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+/* The page header. */
+h1 {
+    text-align: center;
+}
+
+/* The article with the description of the assignment. */
+article {
+    text-align: justify;
+}
