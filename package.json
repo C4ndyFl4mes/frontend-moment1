@@ -7,6 +7,7 @@
     "build": "parcel build src/pages/index.html --public-url ./",
     "deploy": "npm run build && gh-pages -d dist"
   },
+  "browserslist": "> 0.5%, last 2 versions, not dead",
   "author": "Isaac Svedin",
   "license": "ISC",
   "description": "",
