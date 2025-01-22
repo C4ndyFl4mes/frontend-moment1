@@ -4,13 +4,15 @@ body {
     margin: 0;
     background-color: #70ffff;
     font-family: "Roboto", Helvetica, Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
 }
 
 header {
     width: 100%;
     min-height: 4rem;
     background-color: #555;
-    
+
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -24,4 +26,22 @@ header>p {
     align-self: center;
 
     color: #39ecdd;
+}
+
+main {
+    min-height: 100vh;
+}
+
+footer {
+    padding: 0.5rem;
+
+    background-color: aqua;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+footer>article {
+    flex: 1;
 }
