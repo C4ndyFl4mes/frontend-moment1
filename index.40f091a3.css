@@ -23,11 +23,13 @@ header > p {
   font-size: 2rem;
 }
 
+main {
+  min-height: 100vh;
+}
+
 footer {
-  background-color: red;
+  background-color: #0ff;
   flex-flow: wrap;
   display: flex;
-  position: absolute;
-  top: 100vh;
 }
 /*# sourceMappingURL=index.40f091a3.css.map */
