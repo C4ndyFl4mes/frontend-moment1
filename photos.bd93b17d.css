@@ -1,0 +1,2 @@
+main{width:90%;max-width:1100px;margin:0 auto}h1{text-align:center}.photos{grid-template-columns:auto auto;justify-content:space-around;gap:50px;display:grid}.image{width:100%;max-width:500px;height:auto}@media screen and (max-width:600px){.photos{grid-template-columns:auto}}
+/*# sourceMappingURL=photos.bd93b17d.css.map */
