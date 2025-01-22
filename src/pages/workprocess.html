@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/global.css">
     <link rel="stylesheet" href="../styles/menu.css">
+    <link rel="stylesheet" href="../styles/workprocess.css">
     <script src="../scripts/menu.js" type="module"></script>
     <title>Arbetsprocess</title>
 </head>
@@ -34,8 +35,41 @@
     <main>
         <h1>Arbetsprocess</h1>
         <article>
-            <h2>Om uppgiften</h2>
-            <p>aaaaaaaaaaa</p>
+            <h2>Process</h2>
+            <p>
+                Först gjorde jag en mapp för Moment 1, därefter öppnade jag mappen i VSC och vidare till terminalen och
+                skrev npm init. Jag glömde skriva -y så jag blev lite förvirrad, men eftersom jag har gjort liknande
+                förut så klickade det ganska snabbt och jag började spamma enter.
+            </p>
+            <p>
+                Efter det skapade jag filstrukturen med bilder, sidor, skript och stilar. När det var klart ersatte jag
+                "main" i package.json till "source" med en filväg till index.html.
+                Därefter installerade jag Parcel och skrev i "start": "parcel" och "build": "parcel build" i "scripts."
+            </p>
+            <p>
+                Jag vet inte när, men jag gjorde i början en branch kallad "Dev." I den gjorde jag alla ändringar och
+                direkt mergade in den med main för att se ifall sidan på GitHub Pages uppdaterades. Vilket det gjorde
+                så allt fungerade då, men den exekverade inte build parcel vilket upptäcktes vid när photos.html
+                gjordes. Eftersom jag inte hittade hur man fixade det till GitHub Pages i teori materialet frågade jag
+                ChatGPT och då fick jag bra instruktioner på hur jag skulle göra det.
+            </p>
+            <p>
+                Instruktionerna var att man behövde göra någon slags deploy.yml i .github/workflows och automatiskt
+                publicera till gh-pages branchen från main branchen. Jag förstår inte riktigt än hur deploy.yml
+                fungerar, men det kan jag nog lära mig. gh-pages installerades genom npm install --save-dev gh-pages.
+            </p>
+            <p>
+                I början var det svårt att veta vilka filer och mappar skulle vara i .gitignore vilket orsakade att jag
+                behövde ta bort grejer vilket var jätte svårt. Det är därför package-lock.json är kvar i GitHub för det
+                blev en konflikt och jag råkade skriva över när jag inte skulle det. Orkade inte fixa det.
+            </p>
+            <p>
+                När photos.html bildernas automatiska bildkonvertering till avif äntligen fungerade i GitHub
+                Pages började jag testa med sharp.config.json med att få ner kvalitén men ändå se bra ut.
+            </p>
+            <p>
+                
+            </p>
         </article>
     </main>
     <footer>
